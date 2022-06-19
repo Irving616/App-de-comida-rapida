@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sobre nosotros</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo"> Pizza "El Atasque" 😋</a>
+
+      <nav class="navbar">
+         <a href="home.html">Casa</a>
+         <a href="about.html">Sobre nosotros</a>
+         <a href="menu.html">Menu</a>
+         <a href="orders.html">Ordenes</a>
+         <a href="contact.html">Conractanos</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">Tu cuenta</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">perfil</a>
+            <a href="#" class="delete-btn">Cerrar sesion</a>
+         </div>
+         <p class="account"><a href="login.html">Accerder</a> o <a href="register.html">registrarse</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<div class="heading">
+   <h3>"El Atasque"</h3>
+   <p><a href="home.html">Casa </a> <span> / Nosotros </span></p>
+</div>
+
+<section class="about">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/about-img.svg" alt="">
+      </div>
+
+      <div class="content">
+         <h3>¿Por que "El Atasque"</h3>
+         <p> Somos una cadena de restaurantes estadounidense, con sede en Plano Texas. Y una franquicia internacional fundada en 1958 en Wichita, Kansas por Dan y Frank Carney. La compañía es conocida por su menú de cocina italoestadounidense, que incluye pizza y pasta, así como guarniciones, bebidas y postres.</p>
+         <a href="menu.html" class="btn"> Nuestro menú</a>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="steps">
+
+   <h1 class="title">3 simples pasos</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/step-1.png" alt="">
+         <h3>Selecciona tu comida</h3>
+         <p>¡¡Vamos atascate de una deliiciosa comida!!</p>
+      </div>
+
+      <div class="box">
+         <img src="images/step-2.png" alt="">
+         <h3>40 min de espera</h3>
+         <p>Dependiendo de la zona donde pidas varia el tiempo de espera</p>
+      </div>
+
+      <div class="box">
+         <img src="images/step-3.png" alt="">
+         <h3>!!ATASCATE¡¡</h3>
+         <p>Date un atascon con toda la comida que pediste</p>
+      </div>
+
+   </div>
+
+</section>
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>Nuestro Email/h3>
+         <a href="mailto:shaikhanas@gmail.com">donatascado@gmail.com</a>
+         <a href="mailto:anasbhai@gmail.com">familiatascada@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>Horarios</h3>
+         <p>12:00am to 11:00pm </p>
+      </div>
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>Donde nos ubicamos</h3>
+         <a href="https://www.google.com/maps">CDMX, Av. churubusco, Col Granjas Mexico, 453 </a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>Numeros</h3>
+         <a href="tel:1234567890">+123-456-7890</a>
+         <a href="tel:1112223333">+111-222-3333</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; <span>FALAZ</span> | </div>
+
+</footer>
+
+
+
+
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".reviews-slider", {
+   loop:true,
+   grabCursor:true,
+            spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+   },
+   breakpoints: {
+      550: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+   },
+});
+
+</script>
+
+</body>
+</html>
